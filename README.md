@@ -59,3 +59,21 @@ from movie_search import search_movies
 results = search_movies("spy thriller in Paris", top_n=3)
 print(results)
 ```
+
+---
+
+## Command Line Demo
+Run the module directly to see a demo search:
+```bash
+python movie_search.py
+```
+This will search for "spy thriller in Paris" and print the top results.
+
+--
+
+## How It Works
+- Loads movie data from `movies.csv` containing titles and plot descriptions.  
+- Uses the `all-MiniLM-L6-v2` model to create embeddings for each plot.  
+- Converts search queries into embeddings using the same model.  
+- Computes cosine similarity between the query and all plots.  
+- Returns the top-N most relevant movies sorted by similarity score.
