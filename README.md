@@ -44,11 +44,12 @@ It uses [SentenceTransformers](https://www.sbert.net) (`all-MiniLM-L6-v2`) to bu
 ## Testing
 
 Run unit tests to verify functionality:
-    ```bash
-    python -m unittest tests/test_movie_search.py -v
-    ```
+```bash
+python -m unittest tests/test_movie_search.py -v
+```
+**Expected:** All 4 tests should pass.  
 
-Expected: all 4 tests should pass.
+*Open `movie_search_solution.ipynb` to see a step-by-step explanation of the implementation.*
 
 ---
 
